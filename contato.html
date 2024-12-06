@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Estilo da fonte, espaçamentos e cores de toda a pagina */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+               /* Estilo da seção principal */ 
+        section {
+            padding: 20px;
+        }
+         /* Estilo do formulário de contato */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, 
+        form textarea, 
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho da página -->    
+        <h1>Entre em Contato</h1>
+    </header>
+    <!-- Navegação entre páginas -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="projeto.html">Projeto</a>
+        <a href="formacao.html">Formação</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+        <!-- Seção principal da página --> 
+    <section>
+        <h2>Formulário de Contato</h2>
+         <!-- Formulário para envio de mensagens -->
+        <form action="enviar.php" method="post">
+            <label for="nome">Nome:</label>
+            <!-- Campo para o nome do usuário -->
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <!-- Campo para o e-mail do usuário -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <!-- Campo para a mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
