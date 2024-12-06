@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <style>
+        /* Estilo da fonte, espaçamentos e cores de toda a pagina */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho da página -->
+        <h1>Meus Projetos</h1>
+    </header>
+    <!-- Links para outras seções do portfólio -->
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="sobre.html" target="_blank">Sobre Mim</a>
+        <a href="formacao.html" target="_blank">Formação</a>
+        <a href="contato.html" target="_blank">Contato</a>
+    </nav>
+    <!-- projetos realizados com os links para ir direto a pagina do projeto -->
+
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Projeto 1</h3>
+                <p>Criei um protótipo de compras com algumas funcionalidades, um trabalho acadêmico em fundamentos de design de sistemas.</p>
+                <a href="https://www.figma.com/proto/pJbM5tID6C0P2M6q6JNZPv/Untitled?node-id=0-1&t=tbPk6uabGGHev4uw-1" target="_blank">Acesse o Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 2</h3>
+                <p>Desenvolvi um protótipo com duas funcionalidades novas, um trabalho acadêmico em design de interação.</p>
+                <a href="https://www.figma.com/proto/pjNJZpyX7IjNNUcvljVseI/sa%C3%BAdej%C3%A1?node-id=0-1&t=eDGzjmMMaPW9WZq0-1" target="_blank">Acesse o Projeto</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Francielle Doff Sotta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
